@@ -1,7 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { Facebook, Github, Twitter, Instagram, ArrowRight } from "lucide-react";
+import {
+  Facebook,
+  Github,
+  Twitter,
+  Instagram,
+  ArrowRight,
+  Phone,
+  MapPin,
+  Mail,
+} from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
 
@@ -26,6 +35,21 @@ const Banner = () => {
           enthusiasm and dedication, combined with my growing skillset, will
           allow me to make a significant contribution to the field of web
           development.
+        </p>
+        <p className="flex flex-col gap-3">
+          <span className="text-md text-zinc-500 flex gap-2 items-center">
+            {" "}
+            <Phone size={19} className="text-primary" />
+            +63 9357237298
+          </span>
+          <span className="text-md text-zinc-500 flex gap-2 items-center">
+            <MapPin size={19} className="text-primary" />
+            Day-as, Cordova, Cebu
+          </span>
+          <span className="text-md text-zinc-500 flex gap-2 items-center">
+            <Mail size={19} className="text-primary" />
+            bancale146@gmail.com
+          </span>
         </p>
         <div className="flex lg:flex-row flex-col justify-between items-center mt-10">
           <div className="flex space-x-5">

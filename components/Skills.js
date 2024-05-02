@@ -37,6 +37,13 @@ const Skills = () => {
                   I have 4 years of experience using JS but i'm still learning
                   in this language
                 </AccordionContent>
+                <AccordionItem value="item-4">
+                  <AccordionTrigger>Figma</AccordionTrigger>
+                  <AccordionContent>
+                    I have 4 years of experience using Figma as a design tools
+                    for Web Design.
+                  </AccordionContent>
+                </AccordionItem>
               </AccordionItem>
             </Accordion>
           </div>

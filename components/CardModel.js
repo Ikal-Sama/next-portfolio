@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 import { Github } from "lucide-react";
 
 import { CardData } from "@public/data/CardData";
@@ -31,9 +32,11 @@ const CardModel = () => {
             />
           </CardContent>
           <CardFooter className="flex justify-between">
-            <Button className="hover:bg-red-800 rounded">
-              <Github size={18} />
-            </Button>
+            <Link href={item.link}>
+              <Button className="hover:bg-red-800 rounded">
+                <Github size={18} />
+              </Button>
+            </Link>
           </CardFooter>
         </Card>
       ))}

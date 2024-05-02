@@ -91,7 +91,7 @@ const Banner = () => {
       </div>
       <div className="w-full lg:w-1/2">
         <Image
-          src="/profile.png"
+          src="/profile.jpg"
           alt="alt"
           width={400}
           height={300}

@@ -51,7 +51,7 @@ const Navbar = () => {
     >
       <div className="">
         <h1 className="text-2xl flex gap-2 font-bold">
-          <Image src="/skull.png" alt="alt" width={30} height={30} />
+          <Image src="/logo.png" alt="alt" width={30} height={30} />
           Daniel Jhon
         </h1>
       </div>

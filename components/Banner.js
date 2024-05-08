@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import {
   Facebook,
   Github,
@@ -53,18 +54,31 @@ const Banner = () => {
         </p>
         <div className="flex lg:flex-row flex-col justify-between items-center mt-10">
           <div className="flex space-x-5">
-            <div className="bg-primary text-center text-zinc-200 p-2 hover:bg-red-800 cursor-pointer duration-300 rounded-full">
+            <Link
+              href="https://www.facebook.com/profile.php?id=100083109102057"
+              className="bg-primary text-center text-zinc-200 p-2 hover:bg-red-800 cursor-pointer duration-300 rounded-full"
+            >
               <Facebook />
-            </div>
-            <div className="bg-primary text-center text-zinc-200 p-2 hover:bg-red-800 cursor-pointer duration-300 rounded-full">
+            </Link>
+            <Link
+              href="https://github.com/Ikal-Sama"
+              className="bg-primary text-center text-zinc-200 p-2 hover:bg-red-800 cursor-pointer duration-300 rounded-full"
+            >
               <Github />
-            </div>
-            <div className="bg-primary text-center text-zinc-200 p-2 hover:bg-red-800 cursor-pointer duration-300 rounded-full">
+            </Link>
+            <Link
+              href="/"
+              className="bg-primary text-center text-zinc-200 p-2 hover:bg-red-800 cursor-pointer duration-300 rounded-full"
+            >
               <Twitter />
-            </div>
-            <div className="bg-primary text-center text-zinc-200 p-2 hover:bg-red-800 cursor-pointer duration-300 rounded-full">
+            </Link>
+            <Link
+              href="https://www.instagram.com/deje.28/"
+              className="bg-primary text-center text-zinc-200 p-2
+              hover:bg-red-800 cursor-pointer duration-300 rounded-full"
+            >
               <Instagram />
-            </div>
+            </Link>
           </div>
           <Button
             className="rounded flex gap-2 py-5 hover:bg-red-800 mt-10 lg:mt-0"
@@ -72,8 +86,8 @@ const Banner = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             <a
-              href="/DanielJhonBancale-Resume.pdf"
-              download="DanielJhonBancale-Resume.pdf"
+              href="/DanielJhon-Resume.pdf"
+              download="DanielJhon-Resume.pdf"
               className=""
             >
               Download CV

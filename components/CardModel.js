@@ -33,9 +33,7 @@ const CardModel = () => {
           </CardContent>
           <CardFooter className="flex justify-between">
             <Link href={item.link}>
-              <Button className="hover:bg-red-800 rounded">
-                <Github size={18} />
-              </Button>
+              <Button className="hover:bg-red-800 rounded">View More</Button>
             </Link>
           </CardFooter>
         </Card>

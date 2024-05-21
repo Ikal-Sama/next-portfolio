@@ -1,4 +1,5 @@
-import * as React from "react";
+"use client";
+import { useEffect, useState } from "react";
 import { DesignData } from "@public/data/DesignData";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,12 +14,27 @@ import {
 } from "@/components/ui/carousel";
 
 export function DesignCard() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 640);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <Carousel
       opts={{
         align: "start",
       }}
-      className="w-full max-w-[65rem]"
+      className="w-full max-w-[59rem]"
     >
       <CarouselContent>
         {DesignData.map((item) => (
@@ -41,8 +57,12 @@ export function DesignCard() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      {!isSmallScreen && (
+        <>
+          <CarouselPrevious className="carousel-previous" />
+          <CarouselNext className="carousel-next" />
+        </>
+      )}
     </Carousel>
   );
 }

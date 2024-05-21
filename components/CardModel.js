@@ -15,7 +15,7 @@ import { CardData } from "@public/data/CardData";
 
 const CardModel = () => {
   return (
-    <div className="flex flex-wrap gap-x-10 gap-y-10 justify-center">
+    <div className="flex flex-wrap gap-x-10 gap-y-10 justify-center z-50">
       {CardData.map((item) => (
         <Card className="w-[350px] hover:scale-105 duration-300">
           <CardHeader>

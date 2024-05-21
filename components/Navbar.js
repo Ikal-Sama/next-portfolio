@@ -45,7 +45,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex justify-between py-3 items-center fixed top-0 left-0 right-0 px-10 bg-white ${
+      className={`flex justify-between py-3 items-center fixed top-0 left-0 right-0 px-10 bg-white z-10 ${
         isScrolled ? "shadow-lg" : ""
       }`}
     >

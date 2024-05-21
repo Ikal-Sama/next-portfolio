@@ -2,7 +2,7 @@ import { DesignCard } from "./DesignCard";
 
 const Design = () => {
   return (
-    <section className="my-20 " id="projects">
+    <section className="my-20 container" id="projects">
       <div className="flex flex-col items-center justify-center">
         <div className="flex items-center  gap-2">
           <h1 className="text-2xl font-bold">Recent Design</h1>

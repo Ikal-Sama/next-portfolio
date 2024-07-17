@@ -86,8 +86,8 @@ const Banner = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             <a
-              href="/DanielJhon-Resume.pdf"
-              download="DanielJhon-Resume.pdf"
+              href="https://drive.google.com/file/d/1Y0RuJwnWIDnjByedD-b8lvnxD1rhyv3k/view?usp=drive_link"
+              download="Resume-bancale.pdf"
               className=""
             >
               Download CV
